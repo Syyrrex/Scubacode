@@ -138,13 +138,6 @@ flowchart TD
 
 *Demonstrates writing Absurd-JS programs, instant bi-directional conversion, running code in the browser sandbox, and triggering custom syntax roasts.*
 
-### Additional Demos
-- 🔄 **Bi-directional Transpilation:** Reverse-compile standard JS files directly into `.absurd` slang code.
-- ⚡ **CLI Runner:** Direct execution of `.absurd` scripts straight from your shell.
-- 🧪 **FizzBuzz & Algorithm Suite:** Full working implementations of algorithms written in pure Gen-Z slang.
-- 🔥 **Slang Roast Engine:** Dynamic syntax error feedback catching broken syntax with custom roasts.
-
----
 
 ## Team Contributions
 
