@@ -1,70 +1,159 @@
-# Scubacode
+# Scubacode (Absurd-JS) 
 
-Scubacode is a fun JavaScript source-to-source transpiler that lets you write JavaScript using internet slang-inspired syntax.
 
-It supports converting **Absurd syntax to JavaScript** and **JavaScript back to Absurd syntax**, with a web-based editor for writing, converting, and running code.
+## Basic Details
 
-## Features
+### Team Name: Asterisk
 
-- Absurd → JavaScript transpilation
-- JavaScript → Absurd reverse transpilation
-- Babel AST-based transformations
-- Run generated JavaScript in a sandbox
-- Browser-based code editor
-- Live output console
-- Example programs
-- Syntax error handling
-- Slang-inspired JavaScript keywords
-- No database or authentication required
-- Runs locally with Node.js
+### Team Members
+- Team Lead: Akhil Raj R - College of Engineering, Alappuzha
+- Member 2: Christo Nevin - College of Engineering, Alappuzha
 
-## Tech Stack
+### Project Description
+Scubacode (Absurd-JS) is a full-featured, source-to-source transpiler and interactive Web IDE for a custom Gen-Z slang programming language (`.absurd`). 
 
-- Node.js
-- JavaScript
-- HTML
-- CSS
-- Babel
-  - `@babel/parser`
-  - `@babel/traverse`
-  - `@babel/generator`
-  - `@babel/types`
-- Node.js `vm` module for code execution
+By leveraging Babel's Abstract Syntax Tree (AST) suite, Scubacode parses brainrot syntax, restructures identifier nodes, and compiles it down to fully executable JavaScript. It features bi-directional conversion (JavaScript ↔ Absurd-JS), isolated sandbox execution, and hilarious custom error roasts when your code fails the vibe check.
 
-## Project Structure
+### The Problem (that doesn't exist)
+Traditional programming languages are strictly stuck in the past with corporate, uninspired keywords like `const`, `let`, `if`, `else`, and `console.log()`. 
 
-```text
-Scubacode/
-├── backend/
-│   └── server.js
-├── frontend/
-│   ├── index.html
-│   ├── app.js
-│   └── style.css
-├── examples/
-│   ├── logic.absurd
-│   └── fizzbuzz.absurd
-├── dictionary.js
-├── transpiler.js
-├── reverse-transpiler.js
+Writing code with these outdated keywords causes severe aura loss, drains dev energy, and completely fails the vibe check for Gen-Z software engineers.
 
-## Branches
+### The Solution (that nobody asked for)
+We built **Scubacode**, an unnecessarily dramatic and chaotic Web IDE and compiler that brings internet slang straight to language engineering. 
 
-- **`main`** (Render / Cloud Deployment)
-  ```bash
-  git checkout main
-  npm install
-  npm start
-  ```
+Now you can write full software programs using peak brainrot keywords:
 
-- **`localhost`** (Local Development)
-  ```bash
-  git checkout localhost
-  cd absurd-transpiler
-  npm install
-  npm start
-  ```
+- `frfr` instead of `const`
+- `lowkey` instead of `let`
+- `vibeCheck` instead of `if`
+- `otherwise` instead of `else`
+- `noCap` / `cap` instead of `true` / `false`
+- `itsGiving` instead of `return`
+- `deadass` instead of `function`
+- `spill()` instead of `console.log()`
+- `fanumtax` instead of `+=`
+- `skibidi` instead of `-=`
+- `mogged` instead of `>`
 
-├── run.js
-├── package.json
-└── README.md
+The AST engine transforms your slang into standard JavaScript, runs it safely in a sandbox environment, and serves custom roast messages if your syntax strays out of line!
+
+---
+
+## Technical Details
+
+### Technologies/Components Used
+
+#### For Software
+- **Languages:** JavaScript (ES6+), HTML5, CSS3
+- **Runtime Environment:** Node.js (v18+)
+- **Backend Framework:** Express.js
+- **Compiler / AST Tools:**
+  - `@babel/parser` (Syntax parsing & AST generation)
+  - `@babel/traverse` (AST node traversal & keyword substitution)
+  - `@babel/generator` (Target JavaScript code generation)
+  - `@babel/types` (AST type assertions & node construction)
+- **Execution Sandbox:** Node.js `vm` module
+- **Tools & Ecosystem:** npm, pnpm, Git, GitHub, VS Code
+
+#### For Hardware
+- Not applicable (Scubacode is a software-only project).
+
+---
+
+## Implementation
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Syyrrex/Scubacode.git
+
+# Navigate to the transpiler core directory
+cd Scubacode/absurd-transpiler
+
+# Install required Babel and server dependencies
+npm install
+```
+
+### Run
+
+**Start the Interactive Web IDE & Backend Server:**
+```bash
+node server.js
+```
+*Access the Web IDE in your browser at `http://localhost:3000`.*
+
+**Run CLI Transpiler on `.absurd` Source Files:**
+```bash
+# Run logic & control flow example
+node run.js examples/logic.absurd
+
+# Run the classic FizzBuzz example in Absurd-JS
+node run.js examples/fizzbuzz.absurd
+```
+
+**Run Automated Test Suite:**
+```bash
+npm test
+```
+
+---
+
+## Project Documentation
+
+### Screenshots
+
+![Web IDE Interface](https://github.com/user-attachments/assets/92e5d227-6a5b-4108-a2e0-8cbae7c53451)
+*Interactive Web IDE showing live Absurd-JS code entry, real-time JavaScript compilation, and output streaming.*
+
+![Reverse Transpiler & Output Console](https://github.com/user-attachments/assets/b6c9acd4-52e8-4257-899e-9101f2cba1d3)
+*Bi-directional JavaScript to Absurd-JS transpilation and live console output execution.*
+
+![Vibe Check Error Console](https://github.com/user-attachments/assets/1f6b55dd-752f-4499-aa45-cf54cd60c8bc)
+*Custom error handler catching syntax bugs and returning slang roasts like "Skill issue detected on line X".*
+
+
+### Diagrams
+
+#### Workflow Architecture
+
+```mermaid
+flowchart TD
+    A["Absurd-JS Source Code (.absurd)"] --> B["Babel Parser"]
+    B --> C["Abstract Syntax Tree (AST)"]
+    C --> D["AST Transformation and Dictionary Mapping"]
+    D --> E["Babel Code Generator"]
+    E --> F["Standard Executable JavaScript"]
+    F --> G["Node.js VM Sandbox Execution"]
+    G --> H["Console Output and Live Web Editor"]
+```
+
+
+
+## Project Demo
+
+### Video
+[Watch the Scubacode Demo Video](https://youtube.com/watch?v=your-demo-video-id)
+
+*Demonstrates writing Absurd-JS programs, instant bi-directional conversion, running code in the browser sandbox, and triggering custom syntax roasts.*
+
+### Additional Demos
+- 🔄 **Bi-directional Transpilation:** Reverse-compile standard JS files directly into `.absurd` slang code.
+- ⚡ **CLI Runner:** Direct execution of `.absurd` scripts straight from your shell.
+- 🧪 **FizzBuzz & Algorithm Suite:** Full working implementations of algorithms written in pure Gen-Z slang.
+- 🔥 **Slang Roast Engine:** Dynamic syntax error feedback catching broken syntax with custom roasts.
+
+---
+
+## Team Contributions
+
+- **Akhil Raj R (Team Lead):** Designed and built the entire Web IDE UI/UX frontend, output console, and styling. Collaborated on backend logic, AST transpilation modules, and sandbox integration.
+- **Christo Nevin:** Lead architect for the backend system, dictionary mapping schemas, Babel AST parser/generator, reverse transpilation engine, Express server endpoints, and CLI runner.
+
+---
+
+Made with ❤️ at TinkerHub Useless Projects
+
+![TinkerHub Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
+![Useless Projects Badge](https://img.shields.io/badge/UselessProjects--26-26?link=https%3A%2F%2Ftinkerhub.org%2Fevents%2F1M8ORET9A1%2Fuseless-projects-3.0)
