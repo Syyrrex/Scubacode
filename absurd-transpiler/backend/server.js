@@ -162,8 +162,8 @@ const server = http.createServer(async (req, res) => {
 });
 
 function startServer(port) {
-  server.listen(port, '0.0.0.0', () => {
-    console.log(`Server running on port ${port}`);
+  server.listen(port, '127.0.0.1', () => {
+    console.log(`Server listening on http://localhost:${port}`);
   }).on('error', (err) => {
     if (err.code === 'EADDRINUSE') {
       console.log(`Port ${port} in use, trying ${port + 1}...`);
