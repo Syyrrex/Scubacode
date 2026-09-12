@@ -148,8 +148,8 @@ flowchart TD
 
 ## Team Contributions
 
-- **Akhil Raj R (Team Lead):** Designed and built the entire Web IDE UI/UX frontend, output console, and styling. Collaborated on backend logic, AST transpilation modules, and sandbox integration.
-- **Christo Nevin:** Lead architect for the backend system, dictionary mapping schemas, Babel AST parser/generator, reverse transpilation engine, Express server endpoints, and CLI runner.
+- **Akhil Raj R :** Designed and built the entire Web IDE UI/UX frontend, output console, and styling. Collaborated on backend logic, AST transpilation modules, and sandbox integration.
+- **Christo Nevin :** Lead architect for the backend system, dictionary mapping schemas, Babel AST parser/generator, reverse transpilation engine, Express server endpoints, and CLI runner.
 
 ---
 
