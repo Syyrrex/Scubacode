@@ -1,0 +1,15 @@
+{
+  "name": "absurd-transpiler",
+  "version": "1.0.0",
+  "main": "run.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "node test-all.js"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.29.8",
+    "@babel/parser": "^7.29.8",
+    "@babel/traverse": "^7.29.8",
+    "@babel/types": "^7.29.8"
+  }
+}
